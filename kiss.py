@@ -1,2 +1,2 @@
-for _ in range(0,2002):
-    print("😘",end="")
+for _ in range(0,100):
+    print("accha ",end="")

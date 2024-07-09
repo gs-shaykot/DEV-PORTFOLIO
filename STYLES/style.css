@@ -1,15 +1,23 @@
-*{margin: 0;padding: 0;font-family: "Open Sans", sans-serif;}
-            /*SAME CLASSES*/
-.text_primary{
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*SAME CLASSES*/
+.text_primary {
     color: #FD6E0A;
 }
-.dark1{
+
+.dark1 {
     color: #181818;
 }
-.dark2{
+
+.dark2 {
     color: #474747;
 }
-.dark3{
+
+.dark3 {
     color: #757575;
 }
 
@@ -26,64 +34,74 @@ header.head {
 
                 /*NAV STYLES*/
 
-.nav_wrap{
+.nav_wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 150px;
 }
-.nav_wrap h3.nav_tittle{
+
+.nav_wrap h3.nav_tittle {
     font-size: 45px;
     font-weight: 800;
 }
 
-ul.menu{
+ul.menu {
     display: flex;
     align-items: center;
 
 }
-ul.menu li{
+
+ul.menu li {
     list-style: none;
     margin-right: 50px;
 }
-ul.menu li a{
+
+ul.menu li a {
     font-size: 20px;
     color: #474747;
     text-decoration: none;
 }
-                    /* BANNER STYLES */
 
-.banner_wrapper{
+                /* BANNER STYLES */
+
+.banner_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.banner_content{
+
+.banner_content {
     margin-left: 150px;
     flex-basis: 500px;
 }
-.banner_content > h4{
+
+.banner_content>h4 {
     font-size: 45px;
     font-weight: 600;
 }
-.banner_content > h3{
+
+.banner_content>h3 {
     font-size: 75px;
     font-weight: 800;
 }
-.banner_content > p{
-    font-size: 18px; 
+
+.banner_content>p {
+    font-size: 18px;
     margin: 20px 0 30px 0;
 }
-.img_wrap{
+
+.img_wrap {
     flex-basis: 500px;
 }
+
 .img_wrap img {
     width: 450px;
     height: 540px;
     margin-bottom: -5px;
 }
 
-.btn_primary{
+.btn_primary {
     font-size: 20px;
     padding: 18px 35px;
     color: #fff;
@@ -91,26 +109,28 @@ ul.menu li a{
     border: none;
     border-radius: 5px;
 }
-  
-.btn_secondary{
+
+.btn_secondary {
     background: none;
     border: 1px solid #FD6E0A;
     color: #FD6E0A;
     font-weight: 700;
 }
-.btn_secondary::before{
-    content: "\f095"; 
+
+.btn_secondary::before {
+    content: "\f095";
     font-family: "Font Awesome 5 Free";
     padding-right: 8px;
 }
+
 .download_btn::before {
-    content: "\f019"; 
-    font-family:"Font Awesome 5 Free";
-    font-weight: 900; 
-    padding-right: 8px;  
+    content: "\f019";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-right: 8px;
 }
 
-                    /* ABOUT STYLES */
+                /* ABOUT STYLES */
 
 .about_wrapper {
     padding: 130px 0 130px 0;
@@ -120,13 +140,15 @@ ul.menu li a{
     border-radius: 10px;
     margin-bottom: 100px;
 }
-.about{
+
+.about {
     border: 1px solid #181818;
     width: 820px;
     margin: 0 auto;
     background: #fff;
     padding: 0 10px 5px 10px;
 }
+
 .about_items {
     display: flex;
     justify-content: space-between;
@@ -138,14 +160,106 @@ ul.menu li a{
     text-align: center;
 }
 
-.about > p {
+.common_paragraph {
     font-size: 18px;
     margin: 25px 0px 25px 0;
     text-align: center;
+    line-height: 30px;
 }
-.item{
+
+.item {
     font-size: 20px;
 }
-.item .para_description{
+
+.item .para_description {
     font-weight: 700;
+}
+
+                /* CARD STLES */
+
+.card_content {
+    width: 920px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card_content > p {
+    margin-bottom: 30px;
+}
+
+.card_content > h4 {
+    margin-bottom: 30px;
+}
+
+.card_wrapper {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+.card {
+    flex-basis: 260px;
+    box-shadow: 0px 0px 30px #c1c1c1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 30px;
+}
+.card img {
+    margin-bottom: 25px;
+}
+.card h4 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.card p {
+    line-height: 30px;
+}
+
+                /* RESUME STYLES */
+
+.resume_tittle{
+    margin-bottom: 110px;
+}
+
+.content_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.education{
+    flex-basis: 40%;
+}
+.education > h3, .experience > h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.experience{
+    flex-basis: 40%;
+}
+.content_item {
+    border-bottom: 1px solid #474747;
+    margin-bottom: 30px;
+}
+.last_item{
+    border-bottom: none;
+}
+.content_item h4{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #474747;
+}
+.content_item h5{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #757575;
+}
+.content_item p {
+    padding: 0 40px 30px 0;
+}
+.resume-btn {
+    margin: 0 auto;
+    display: block;
 }
