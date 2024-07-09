@@ -28,7 +28,7 @@ header.head {
     background-repeat: no-repeat;
     background-position: 30px 10px, bottom right;
     background-size: 80px 635px, 700px;
-    background-color: #FFF8F3;
+    background-color: #fff8f3;
     margin-bottom: 100px;
 }
 
@@ -262,4 +262,65 @@ ul.menu li a {
 .resume-btn {
     margin: 0 auto;
     display: block;
+    margin-bottom: 110px;
+}
+
+            /* FOOTER STYLE */
+
+.footer_wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background: #fff8f3;
+    padding: 130px 0;
+}
+.social{
+    flex-basis: 560px;
+}
+.form_wrap {
+    flex-basis: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_wrapper h4 {
+    padding-bottom: 20px;
+    text-align: left;
+}
+.social p {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.social_icons a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #FD6E0A;
+}
+input {
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 18px 0 18px 20px;
+    border: none;
+}
+input[type="text"], input[type="email"] {
+    font-size: 16px;
+}
+input:focus{
+    outline: none;
+}
+
+textarea#msg{
+    max-width: 400px;
+    min-height: 180px;
+    max-height: 180px;
+    outline: none;
+    border: none;
+}
+textarea#msg[placeholder] {
+    padding: 16px 20px;
+    font-size: 16px;
+}
+.submit-btn{
+    width: 150px;
+    margin-top: 20px;
 }
